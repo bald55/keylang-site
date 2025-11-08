@@ -13,13 +13,16 @@
         color: white;
       }
 header {transition: transform 0.3s ease;}
-.key { color:#ff5555; font-weight:bold; }
-.func { color:#c586c0; }
-.num { color:#61afef; }
-.YELLOW { color:#ffee8c; }
-.bold { font-weight:bold; }
-.lime { color:#93c47d; }
-.comment { color:gray; }
+.key {color:#ff5555; font-weight:bold;}
+.func {color:#c586c0;}
+.num {color:#61afef;}
+.YELLOW{ color:#ffee8c;}
+.bold {font-weight:bold;}
+.lime {color:#93c47d;}
+.comment {color:gray;}
+
+pre::-webkit-scrollbar {display: none;}
+pre {scrollbar-width: none;}
     </style>
   </head>
   <body style="background-color: #1e1e1e;">
@@ -41,7 +44,7 @@ lastY = window.scrollY;
 
 <div style="background-color: #80ef80; padding: 10px; position: relative; text-align: center;">
   <h1 style="font-size: 50px; margin: 0;">Keylang!!!</h1>
-  <p style="font-size: 20px; margin: 0;">v0.1.0</p>
+  <p style="font-size: 20px; margin: 0;">v0.2.0</p>
   <img src="Keylang_logo.png" alt="Keylang logo" style="height: 100px; position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
 </div>
 
@@ -66,7 +69,7 @@ lastY = window.scrollY;
       Tabs and spaces are optional. Put them anyways they’re helpful<br><br><br>
 	  
 <h2>Preview of valid Keylang</h2>
-<div style="background-color: #1e1e1e; padding: 10px;">
+<div style="background-color: #1e1e1e; padding: 10px; max-width: 700px; margin: 20px auto;">
 <pre style="text-align: left; background-color: #2e2e2e; padding: 10px; border-radius: 4px; overflow-x: auto;">
 <code>
 <span class="bold">vari_name</span> <span class="func">dict</span>(<span class="YELLOW">"a"</span> = <span class="func">random</span>(<span class="num">67</span>, <span class="num">68</span>), <span class="YELLOW">"b"</span> = <span class="num">2763</span>)
@@ -135,7 +138,7 @@ lastY = window.scrollY;
     <td>Access one of an array’s value</td>
   </tr>
   <tr>
-    <td>dictionary_array_name[x]</td>
+    <td>dictionary_array_name[key]</td>
     <td>Access one of a dictionaries value</td>
   </tr>
   <tr>
