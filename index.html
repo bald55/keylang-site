@@ -31,6 +31,7 @@ pre {scrollbar-width: none;}
 <a href="index.html" style="display: inline-block;">
 <img src="Keylang_full_logo.png" alt="Keylang full logo" style="height: 50px;">
 </a>
+<a href="#keywords" style="font-family: 'Lato', sans-serif; font-size: 22px; text-decoration: none; margin-left: 30px;"> KEYwords </a>
 <a href="#downloads" style="font-family: 'Lato', sans-serif; font-size: 22px; text-decoration: none; margin-left: 30px;"> Downloads </a>
 </header>
 
@@ -62,7 +63,8 @@ lastY = window.scrollY;
 <a href="https://www.python.org/" style="color:#61afef;"> Here's the Python page </a>
 
       <h2>If you’re coming from Python:</h2>
-      <h4>(which unfortunately you're expected to, these docs aren't very helpful otherwise)</h4>
+      <h4>(which unfortunately you're expected to, these docs DO have a <a href="get_started.html" target="_blank" style="color:#61afef;">Get Started</a> page though)</h4>
+	  <p> <span class="comment">I worked harder on that page than the main page...</span></p>
       <p> def is replaced with func for simplicity<br>
       : is replaced with opening ‘{‘ and closing ‘}’<br>
       () is optional for functions that don’t have arguments. However, calling them you still use () haha<br>
@@ -71,16 +73,18 @@ lastY = window.scrollY;
 <h2>Preview of valid Keylang</h2>
 <div style="background-color: #1e1e1e; padding: 10px; max-width: 700px; margin: 20px auto;">
 <pre style="text-align: left; background-color: #2e2e2e; padding: 10px; border-radius: 4px; overflow-x: auto;">
-<code>
-<span class="bold">vari_name</span> <span class="func">dict</span>(<span class="YELLOW">"a"</span> = <span class="func">random</span>(<span class="num">67</span>, <span class="num">68</span>), <span class="YELLOW">"b"</span> = <span class="num">2763</span>)
+<code style="font-size: 16px;">
+<span class="bold">vari_name</span> = <span class="func">dict</span>(<span class="YELLOW">"a"</span> = <span class="func">random</span>(<span class="num">67</span>, <span class="num">68</span>), <span class="YELLOW">"b"</span> = <span class="num">2763</span>)
 
 <span class="key">func</span> <span class="lime">cool_func</span>{
     <span class="func">print</span>(<span class="YELLOW">"hi"</span>)
 	<span class="lime">loop</span>(<span class="num">3</span>){
 		<span class="func">wait</span>(<span class="num">1</span>)
-		<span class="key">self 's</span> <span class="bold">scale</span> * <span class="func">random</span>(<span class="bold">vari_name</span>)
+		<span class="key">self 's</span> <span class="bold">scale</span> *= <span class="func">random</span>(<span class="bold">vari_name</span>)
 		}
 	}
+	
+<span class="func">cool_func</span>()
 	
 <span class="comment"># prints hi, then, repeating 3 times, waits 1 second before multiplying self's scale by a random value from the dictionary vari_name.</span>
 </code>
@@ -90,6 +94,7 @@ lastY = window.scrollY;
 
 <br> <br>
 
+<section id="keywords" style="margin-top:80px;">
 <h2>Helpful new functions and KEYwords:</h2>
 
 <table border="1" cellpadding="8" cellspacing="0" style="margin:auto; border-collapse: collapse; font-family: Lato, sans-serif;">
@@ -127,7 +132,7 @@ lastY = window.scrollY;
   </tr>
   <tr>
     <td>array()</td>
-    <td>Creates an array</td>
+    <td>Creates a LIST not array</td>
   </tr>
   <tr>
     <td>dict()</td>
@@ -135,7 +140,7 @@ lastY = window.scrollY;
   </tr>
   <tr>
     <td>the_array_name[index]</td>
-    <td>Access one of an array’s value</td>
+    <td>Access one of an LIST’s value</td>
   </tr>
   <tr>
     <td>dictionary_array_name[key]</td>
@@ -263,5 +268,4 @@ Open an issue on GitHub
 </a>
 </a>
 </p>
-
 
