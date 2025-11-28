@@ -45,7 +45,7 @@ lastY = window.scrollY;
 
 <div style="background-color: #80ef80; padding: 10px; position: relative; text-align: center;">
   <h1 style="font-size: 50px; margin: 0;">Keylang!!!</h1>
-  <p style="font-size: 20px; margin: 0;">v1.0.0+</p>
+  <p style="font-size: 20px; margin: 0;">v2.0.0+</p>
   <img src="Keylang_logo.png" alt="Keylang logo" style="height: 100px; position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
 </div>
 
@@ -68,12 +68,14 @@ lastY = window.scrollY;
 
       <h2>If you’re coming from Python:</h2>
       <h4>(which unfortunately you're expected to, these docs DO have a <a href="get_started.html" target="_blank" style="color:#61afef;">Get Started</a> page though)</h4>
-	  <p> <span class="comment">I worked harder on that page than the main page...</span></p>
+	  <!-- <p> <span class="comment">I worked harder on that page than the main page...</span></p> -->
       <p> def is replaced with func for simplicity<br>
       : is replaced with opening ‘{‘ and closing ‘}’<br>
       () is optional for functions that don’t have arguments. However, calling them you still use () haha<br>
       Tabs and spaces are optional. Put them anyways they’re helpful<br>
-	  's is an alias for the . accessor for better grammar, it may have a few bugs though<br><br></p>
+	  Variables are defined using the var keyword<br>
+	  's is an alias for the . accessor for better grammar, it may have a few bugs though<br>
+	  <strong>Yep you know Keylang now (ish)</strong><br><br></p>
 	  
 	  <h2>If you’re coming from Lua:</h2>
       <p>You can embed Lua in Keylang!<br></p>
@@ -85,33 +87,29 @@ embed_lua{}
 </code>
 </pre>
 </div>
-and write Lua in the parentheses! Great if you need Lua for certain sections</p>
+and write Lua in the curly brackets! Great if you need Lua for certain sections</p>
 <br>
 	  
 <h1>Setting up</h1>
 <h3>1. Download</h3>
 <p>Easiest part</p>
 <h3>2. Extract files</h3>
-<p>Right click on the zip folder and press "Extract All..." or something else if you're not on Windows</p>
+<p>Right click on the zip folder and press "Extract All..." or something else if you're not on Windows idk</p>
 <h3>3. Run the batch file called keylang.bat</h3>
 <p>Open keylang-x.x.x -> keylang_files -> runner<br>
 Right click keylang.bat and press "Run as administrator"<br>
 It does cool stuff and sets up your .kl files</p>
 <h3>4. You're basically done</h3>
 <p> To run your .kl file... from a Python file, just put
-<br>
-\<strong> BTW THIS IS NOT RECOMMENDED FOR NON TESTING I JUST REALIZED ok bye </strong>
-<div style="background-color: #1e1e1e; padding: 10px; max-width: 700px; margin: 20px auto;">
-<pre style="text-align: left; background-color: #2e2e2e; padding: 10px; border-radius: 4px; overflow-x: auto;">
-<code style="font-size: 16px;">
-<span class="key">from</span> <span class="bold">runner</span>.<span class="bold">keylang_runner</span> <span class="key">import</span> <span class="bold">run_kl</span>
-<span class="func">run_kl</span>(<span class="YELLOW">"test.kl"</span>) <span class="comment"># replace with file... path you want to run</span>
-</code>
-</pre>
-</div>
-or for more control:
-	<br>
-	<strong> yeah this is the one that is recommended</strong>
+<!-- <div style="background-color: #1e1e1e; padding: 10px; max-width: 700px; margin: 20px auto;"> -->
+<!-- <pre style="text-align: left; background-color: #2e2e2e; padding: 10px; border-radius: 4px; overflow-x: auto;"> -->
+<!-- <code style="font-size: 16px;"> -->
+<!-- <span class="key">from</span> <span class="bold">runner</span>.<span class="bold">keylang_runner</span> <span class="key">import</span> <span class="bold">run_kl</span> -->
+<!-- <span class="func">run_kl</span>(<span class="YELLOW">"test.kl"</span>) <span class="comment"># replace with file... path you want to run</span> -->
+<!-- </code> -->
+<!-- </pre> -->
+<!-- </div> -->
+<!-- or for more control: -->
 <div style="background-color: #1e1e1e; padding: 10px; max-width: 700px; margin: 20px auto;">
 <pre style="text-align: left; background-color: #2e2e2e; padding: 10px; border-radius: 4px; overflow-x: auto;">
 <code style="font-size: 16px;">
@@ -131,7 +129,7 @@ And it will run the file, preprocessed to Python!!!!! <br><br>
 <div style="background-color: #1e1e1e; padding: 10px; max-width: 700px; margin: 20px auto;">
 <pre style="text-align: left; background-color: #2e2e2e; padding: 10px; border-radius: 4px; overflow-x: auto;">
 <code style="font-size: 16px;">
-<span class="bold">vari_name</span> = <span class="func">dict</span>(<span class="YELLOW">"a"</span> = <span class="func">random</span>(<span class="num">67</span>, <span class="num">68</span>), <span class="YELLOW">"b"</span> = <span class="num">2763</span>)
+<span class="key">var</span> <span class="bold">vari_name</span> = <span class="func">dict</span>(<span class="YELLOW">"a"</span> = <span class="func">random</span>(<span class="num">67</span>, <span class="num">68</span>), <span class="YELLOW">"b"</span> = <span class="num">2763</span>)
 
 <span class="key">func</span> <span class="lime">cool_func</span>{
     <span class="func">print</span>(<span class="YELLOW">"hi"</span>)
@@ -147,9 +145,9 @@ And it will run the file, preprocessed to Python!!!!! <br><br>
 </code>
 </pre>
 </div>
-<p> <span class="comment"> yep pretty similar to python currently </span> </p>
+<!-- <p> <span class="comment"> yep pretty similar to python currently </span> </p> -->
 
-<br>
+<!-- <br> -->
 
 <section id="keywords" style="margin-top:80px;">
 <h1>Helpful new functions and KEYwords:</h1>
@@ -171,6 +169,10 @@ And it will run the file, preprocessed to Python!!!!! <br><br>
     <td>elif x == y {}</td>
     <td>Only runs the code in the block if all previous statement were false AND the condition is true</td>
   </tr>-->
+  <tr>
+    <td>var (v2.0.0+)</td>
+    <td>Defines a variable</td>
+  </tr>
   <tr>
     <td>loop(n) {}</td>
     <td>Loops the code in the block an amount of times</td>
@@ -239,6 +241,10 @@ And it will run the file, preprocessed to Python!!!!! <br><br>
     <td>print_all</td>
     <td>Prints a LOT of stuff basically</td>
   </tr>
+  <tr>
+    <td>looprate</td>
+    <td>Gets the rate of the last time it was called. Still may be buggy but should work for now</td>
+  </tr>
 </table>
 
 <h2>Some shortcuts you should know when using the editor:</h2>
@@ -249,8 +255,12 @@ And it will run the file, preprocessed to Python!!!!! <br><br>
     <th>What it does</th>
   </tr>
   <tr>
-    <td>Ctrl K / Ctrl /</td>
+    <td>Ctrl K or Ctrl /</td>
     <td>Comment out</td>
+  </tr>
+  <tr>
+    <td>Ctrl Shift K or Ctrl Shift /</td>
+    <td>Uncomment out</td>
   </tr>
   <tr>
     <td>Ctrl F</td>
@@ -282,6 +292,21 @@ And it will run the file, preprocessed to Python!!!!! <br><br>
 <section id="downloads" style="margin-top:80px;">
   <h1>Downloads</h1>
   <p> <strong> You can download it directly from here </strong> </p>
+  
+  <p>v2.x.x</p>
+  
+  <a href="https://github.com/bald55/Keylang/releases/download/v2.0.0/keylang-2.0.0.zip" 
+  style="display: inline-block;
+  background-color: #80ef80;
+  color: teal;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 2px;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;">
+  Download Keylang v2.0.0</a>
+  
+  <br><p>v1.x.x</p>
   
   <a href="https://github.com/bald55/Keylang/releases/download/v1.0.0/keylang-1.0.0.zip" 
   style="display: inline-block;
@@ -343,5 +368,4 @@ Open an issue on GitHub
 </a>
 </a>
 </p>
-
 
